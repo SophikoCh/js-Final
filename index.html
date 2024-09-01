@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wcodeJSfinal</title>
+
+    <!--Style-->
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="stylesheet" href="./Styles/burger-menu.css" />
+    <!--Swiper-->
+    <link
+      rel="stylesheet"
+      href="./Swiper/cdn.jsdelivr.net_npm_swiper@8.4.7_swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Burger Menu Hidden-->
+    <div class="burgermenu-container hidden">
+      <a href="#" class="burgermenu-items">Home</a>
+      <a href="#" class="burgermenu-items">Menu</a>
+      <a href="#" class="burgermenu-items">Blog</a>
+      <a href="#" class="burgermenu-items">Our story</a>
+    </div>
+
+    <!-- Main Html Code-->
+    <div class="container">
+      <header class="header">
+        <nav class="header-nav">
+          <div class="header-nav-container">
+            <img
+              src="./Assets/Images/logo.png"
+              alt="logo"
+              class="header-nav-title"
+            />
+            <ul class="header-nav-sections-container">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#" style="margin: 0">Our story</a></li>
+            </ul>
+            <button>Log in</button>
+            <!-- This Icon Appears on tablet resolution -->
+            <img
+              src="./Assets/Images/menu-icon.svg"
+              alt="menu-icon"
+              class="menu-icon"
+            />
+          </div>
+        </nav>
+
+        <div class="header-card-container">
+          <div class="header-card-background swiper">
+            <div class="swiper-wrapper">
+              <div class="header-card-imagebox swiper-slide"></div>
+              <div class="header-card-imagebox swiper-slide"></div>
+              <div class="header-card-imagebox swiper-slide"></div>
+            </div>
+
+            <div class="swiper-button-prev">
+              <img src="./Assets/Images/prev-arrow.svg" alt="back-arrow" />
+            </div>
+            <div class="swiper-button-next">
+              <img src="./Assets/Images/next-arrow.svg" alt="next-arrow" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <h2 class="main-title">Latest news</h2>
+        <div class="main-news-container">
+          <!-- Here are Cards added by javascript -->
+        </div>
+
+        <div class="main-pagination-container">
+          <div class="prev-button">Prev</div>
+          <div class="page-numbers page-1 active-page">1</div>
+          <div class="page-numbers page-2">2</div>
+          <div class="page-numbers page-3">3</div>
+          <div class="page-numbers page-4">4</div>
+          <div class="next-button">Next</div>
+        </div>
+
+        <h3 class="main-readmore">Read more</h3>
+
+        <!-- It appears on tablet resolution too -->
+        <!-- Header but its in main section in tablet -->
+        <div class="header-card-container main-card-container">
+          <div class="header-card-background">
+            <div class="header-card-imagebox"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-info">
+            <!--About Section-->
+            <div class="footer-section-container">
+              <h4 class="footer-section-title">About</h4>
+              <p class="footer-sections">Lorem ipsum</p>
+              <p class="footer-sections">Lorem ipsum</p>
+              <p class="footer-sections">Lorem ipsum</p>
+              <p class="footer-sections">Lorem ipsum</p>
+            </div>
+            <!--Policy Section-->
+            <div class="footer-section-container">
+              <h4 class="footer-section-title">Policy</h4>
+              <p class="footer-sections">Lorem ipsum</p>
+              <p class="footer-sections">Lorem ipsum</p>
+              <p class="footer-sections">Lorem ipsum</p>
+            </div>
+            <!--Contact Section-->
+            <div class="footer-section-container">
+              <h4 class="footer-section-title">Contact</h4>
+              <p class="footer-sections">Lorem ipsum</p>
+              <p class="footer-sections">Lorem ipsum</p>
+              <p class="footer-sections">Lorem ipsum</p>
+              <p class="footer-sections">Lorem ipsum</p>
+            </div>
+          </div>
+
+          <div class="footer-social">
+            <div style="border-radius: 1px; border-bottom: 2px solid #c3bfbf">
+              <h4 class="footer-section-title">Come join us</h4>
+              <div class="footer-social-input-container">
+                <input
+                  type="email"
+                  placeholder="Enter email"
+                  class="footer-social-input"
+                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="12"
+                  viewBox="0 0 10 12"
+                  fill="none"
+                >
+                  <path
+                    d="M1.98157 0.237467L9.74654 5.55673C9.83871 5.62005 9.90384 5.68865 9.94194 5.76253C9.98065 5.83641 10 5.91557 10 6C10 6.08443 9.98065 6.16359 9.94194 6.23747C9.90384 6.31135 9.83871 6.37995 9.74654 6.44327L1.98157 11.7784C1.76651 11.9261 1.49769 12 1.17511 12C0.852534 12 0.576036 11.9208 0.345622 11.7625C0.115208 11.6042 0 11.4195 0 11.2084C0 10.9974 0.115208 10.8127 0.345622 10.6544L7.11982 6L0.345622 1.34565C0.130569 1.19789 0.0230408 1.01594 0.0230408 0.799789C0.0230408 0.58322 0.138248 0.395778 0.368663 0.237467C0.599077 0.0791559 0.867895 0 1.17511 0C1.48233 0 1.75115 0.0791559 1.98157 0.237467Z"
+                    fill="#C4BFBF"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="footer-social-icons-container">
+              <div class="footer-social-icons-background">
+                <img src="./Assets/Images/facebook.svg" alt="facebook-logo" />
+              </div>
+              <div class="footer-social-icons-background">
+                <img src="./Assets/Images/instagram.png" alt="instagram-logo" />
+              </div>
+              <div class="footer-social-icons-background">
+                <img src="./Assets/Images/twitter.svg" alt="twitter-logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!--Swiper-->
+    <script src="./Swiper/cdn.jsdelivr.net_npm_swiper@8.4.7_swiper-bundle.min.js"></script>
+    <!--Script-->
+    <script src="./JavaScript/slider.js"></script>
+    <script src="./JavaScript/news.js"></script>
+    <script src="./JavaScript/burger-menu.js"></script>
+    <script src="./JavaScript/header.js"></script>
+  </body>
+</html>
